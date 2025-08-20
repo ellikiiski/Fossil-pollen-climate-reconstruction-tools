@@ -1,0 +1,5 @@
+# imports
+requests
+
+# testing
+pytest
