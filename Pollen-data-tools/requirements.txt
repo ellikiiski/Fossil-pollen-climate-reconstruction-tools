@@ -1,5 +1,5 @@
 # imports
-requests
+requests==2.31.0
 
 # testing
-pytest
+pytest==7.4.0
