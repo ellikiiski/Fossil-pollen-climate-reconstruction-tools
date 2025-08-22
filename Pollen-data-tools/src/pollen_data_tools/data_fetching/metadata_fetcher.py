@@ -4,8 +4,8 @@ Filter by location or limit the number of searches if desired.
 Function fetch_sites returns a json file containing the info of the datasets.
 """
 
-import requests
-from ..data_writing import json_handler as json
+from ..helpers import json_handler as json
+from ..helpers import api_requests as req
 
 # TODO: tsekkaa käytetäänkö ageoldest ja ageyoungest ikinä
 
@@ -44,47 +44,18 @@ def _get_siteids(url, type, max_searches=None):
     a dictionary of siteid:datasetid pairs.
     The number of fetches can be restricted with the max_searches parameter."""
 
-    limit = max_searches if max_searches != None and max_searches < 1000 else 1000
-    params = {
-        'datasettype': type,    # filtering by dataset type
-        'limit': limit,         # how many sites to fetch
-        'offset': 0             # initial offset, starting from the beginning
-    }
+    data = req.fetch_site_data(url, type, max_searches)
 
     ids = {}
-    has_more_data = True    # stops the while loop when all data has been fetched
-    enough_data = False     # stops the while loop when the max_searches has been reached
 
-    while has_more_data and not enough_data: # loop new API fetches until there's no more data (wanted)
-        response = requests.get(url, params=params)
+    # loop over the sites and save the siteid:datasetid pairs in the dictionary
+    for site in data:
+                
+        siteid = site['siteid']
+        dataset = site['collectionunits'][0]['datasets'][0]
+        datasetid = dataset['datasetid']
 
-        if response.status_code == 200:
-            data = response.json()
-            sites = data['data']
-
-            # loop over the sites and save the siteid:datasetid pairs in the dictionary
-            for site in sites:
-
-                siteid = site['siteid']
-                dataset = site['collectionunits'][0]['datasets'][0]
-                datasetid = dataset['datasetid']
-
-                ids[siteid] = datasetid
-
-            # check if max number of searches is reached
-            if max_searches != None and len(ids) >= max_searches:
-                enough_data = True # stops the loop before next round
-
-            # check if more data is available
-            if len(sites) < params['limit']:
-                has_more_data = False # stops the loop before next round
-
-            else:
-                params['offset'] += params['limit'] # updates parameters to use get the next page of results
-
-        else: # if request was not successful
-            print(f"Failed to retrieve data: {response.status_code}")
-            has_more_data = False
+        ids[siteid] = datasetid
 
     return ids
 
@@ -103,6 +74,10 @@ def _combine_ids(dict1, dict2):
 
 def _location_check(data, loc_limits):
     """Returns true or false according to whether the data is within desired area."""
+
+    # in case location is not restricted
+    if loc_limits == None:
+        return True
 
     # extraxt the location parameters
     [min_lat, max_lat, min_long, max_long] = loc_limits
@@ -134,44 +109,34 @@ def _get_site_infos(sites, base_url, loc_limits=None):
     # loop over sites and get the info
     for (siteid, dataset_ids) in sites.items():
 
-        pollenid = dataset_ids[0]
-        response = requests.get(f'{base_url}/{pollenid}')
-        if response.status_code == 200:
-            data = response.json()
+        data = req.fetch_site_info(siteid, base_url)
 
-            # FILTER
-            location_ok = True
-            if loc_limits != None:
-                location_ok = _location_check(data, loc_limits)
-            
-            if location_ok:
+        # FILTER
+        if _location_check(data, loc_limits):
 
-                # gather info
-                site =  data['data'][0]['site']
-                sitename = site['sitename']
-                latitude = site['latitudesouth']
-                longitude = site['longitudeeast']
+            # gather info
+            site =  data['data'][0]['site']
+            sitename = site['sitename']
+            latitude = site['latitudesouth']
+            longitude = site['longitudeeast']
 
-                # build info dictionary
-                siteinfo = {
-                    'siteid' : siteid,
-                    'sitename' : sitename,
-                    'latitude' : latitude,
-                    'longitude' : longitude,
-                    'ageoldest' : None,
-                    'ageyoungest' : None,
-                    'pollen' : {
-                        'datasetid' : dataset_ids[0]
-                    },
-                    'chronologies' : {
-                        'datasetid' : dataset_ids[1]
-                    }
+            # build info dictionary
+            siteinfo = {
+                'siteid' : siteid,
+                'sitename' : sitename,
+                'latitude' : latitude,
+                'longitude' : longitude,
+                'ageoldest' : None,
+                'ageyoungest' : None,
+                'pollen' : {
+                    'datasetid' : dataset_ids[0]
+                },
+                'chronologies' : {
+                    'datasetid' : dataset_ids[1]
                 }
+            }
 
-                siteinfos.append(siteinfo)
-
-        else:
-            print(f"Failed to retrieve data of id {pollenid}: {response.status_code}")
+            siteinfos.append(siteinfo)
 
         progress += 1 # update progress
 

@@ -30,9 +30,9 @@ HARMONIZED_LABELS = [
 ## DATA FETCHING FILE PATHS
 # project root and folder paths
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-FILES_DIR = os.path.join(PROJECT_ROOT, 'files')
+DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
 # json files
-SITES_FILE_PATH = os.path.join(FILES_DIR, "sites.json")
+SITES_FILE_PATH = os.path.join(DATA_DIR, "sites.json")
 DATASETS_FILE_PATH = 'output/json/datasets.json'
 FILTERED_FILE_PATH = 'output/json/FILTERED.json'
 SUMMARY_FILE_PATH = 'output/json/summary.json'
