@@ -50,3 +50,20 @@ def fetch_site_info(id, base_url):
 
     else:
         print(f"Failed to retrieve data of id {id}: {response.status_code}")
+
+
+def fetch_dataset(base_url, datasetid):
+    """Accesses the Neotoma database through API,
+    fetches the data of given dataset id
+    and returns it as dictionary.
+    """
+
+    response = requests.get(f'{base_url}/{datasetid}')
+    if response.status_code == 200:
+
+        return response.json()
+        
+    else:
+        print(f'Failed to download the data with dataset id {datasetid} (pollen data)')
+    
+    return None

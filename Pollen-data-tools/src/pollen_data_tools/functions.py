@@ -6,6 +6,7 @@ To run the scripts, go to the scripts folder in the project root.
 import pollen_data_tools.constants as c
 import pollen_data_tools.parameters as p
 import pollen_data_tools.data_fetching.metadata_fetcher as meta
+import pollen_data_tools.data_fetching.data_fetcher as data
 
 
 ## SCRIPT FUNCTIONS
@@ -24,7 +25,7 @@ def run_data_fetch():
     # DATA FETCHING
     if p.FETCH_STEP_2:
         print(f'\nSTEP 2: Fetching data from Neotoma')
-        #f.data_fetching()
+        _fetch_data()
     else:
         f'\nSTEP 2 (Fetching data from Neotoma) skipped.'
 
@@ -60,3 +61,12 @@ def _fetch_sites():
     meta.get_sites(c.METADATA_URL, c.DATASET_INFO_BASE_URL, c.SITES_FILE_PATH, p.COORDINATES, p.MAX_SEARCHES)
 
     print(f'\nSites fetched and written into json file in {c.SITES_FILE_PATH}.')
+
+# FETCH 2
+def _fetch_data():
+
+    print(f'Fetching pollen data and chronologies of the sites listed in {c.SITES_FILE_PATH}.\n')
+
+    data.fetch_datasets(c.DATASET_DOWNLOAD_BASE_URL, c.SITES_FILE_PATH, c.DATASETS_FILE_PATH)
+
+    print(f'\nFull pollen and chronological data fetched and written in {c.DATASETS_FILE_PATH}.')
