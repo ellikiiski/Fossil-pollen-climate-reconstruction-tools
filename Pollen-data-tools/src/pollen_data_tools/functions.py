@@ -62,7 +62,7 @@ def run_data_harmonization():
     # NORMALIZE
     if p.HARM_STEP_2:
         print(f'\nSTEP2: Normalizing the harmonized data')
-        #f.normalizing()
+        _normalize()
     else:
         print(f'STEP 2 (Normalizing the harmonized data) skipped.')
 
@@ -130,3 +130,13 @@ def _harmonize():
 
     print(f'Harmonized data written in {c.HARMONIZED_DATA_FILE_PATH}.')
     print(f'Missing labels written in {c.MISSING_LABELS_FILE_PATH}.')
+
+# HARM 2
+def _normalize():
+
+    print(f'Normalizing the harmonized data in {c.HARMONIZED_DATA_FILE_PATH}.')
+    print(f'NOTE: For this step to be executed correctly, the data must be properly harmonized!')
+
+    harm.normalize(c.HARMONIZED_LABELS, c.HARMONIZED_DATA_FILE_PATH, c.NORMALIZED_JSON_FILE_PATH)
+
+    print(f'Normalized data written in {c.HARMONIZED_DATA_FILE_PATH}.')

@@ -30,5 +30,5 @@ FETCH_STEP_4 = False # Write the list of sites from FILTERED_FILE_PATH into exce
 ## RUN DATA HARMONIZATION
 HARM_STEP_1 = True  # Replace the taxon names in DATA_TO_BE_HARMONIZED_FILE_PATH with labels in JSON_HARMONIZATION_RULES_UPDATED_FILE_PATH
                     # and write output results in HARMONIZED_DATA_FILE_PATH and MISSING_LABELS_FILE_PATH (also remove the ones labeled NONE)
-HARM_STEP_2 = False  # Normalize harmonized data from HARMONIZED_DATA_FILE_PATH and write into NORMALIZED_DATA_FILE_PATH
+HARM_STEP_2 = True  # Normalize harmonized data from HARMONIZED_DATA_FILE_PATH and write into NORMALIZED_DATA_FILE_PATH
 HARM_STEP_3 = False  # Write harmonized data into separate excels
