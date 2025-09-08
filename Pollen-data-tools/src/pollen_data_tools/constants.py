@@ -45,11 +45,8 @@ JSON_HARMONIZATION_RULES_FILE_PATH = os.path.join(DATA_DIR, "rules.json")
 DATA_TO_BE_HARMONIZED_FILE_PATH = FILTERED_FILE_PATH
 TAXON_LIST_FILE_PATH = os.path.join(DATA_DIR, "taxon_names.json")
 # excel files
-EXCEL_HARMONIZATION_RULES_FILE_PATH = 'input/Harmonization_rules_final.xlsx'
+EXCEL_HARMONIZATION_RULES_FILE_PATH = os.path.join(DATA_DIR, "Harmonization_rules.xlsx")
 EXCEL_HARMONIZATOIN_LABELS_FILE_PATH = 'output/excel/Harmonization_labels.xlsx'
-# column indices in harmonization rules excel (starts from zero)
-RULES_KEY_INDEX = 0     # column number of the original name
-RULES_VALUE_INDEX = 3   # column number of the label
 
 ## DATA HARMONIZATION FILE PATHS
 # json files

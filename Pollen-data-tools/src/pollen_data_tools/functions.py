@@ -9,6 +9,7 @@ import pollen_data_tools.data_fetching.metadata_fetcher as meta
 import pollen_data_tools.data_fetching.data_fetcher as data
 import pollen_data_tools.data_fetching.data_filter as filt
 import pollen_data_tools.data_harmonization.data_harmonizer as harm
+import pollen_data_tools.data_harmonization.harmonization_prep as prep
 
 
 ## SCRIPT FUNCTIONS
@@ -75,6 +76,32 @@ def run_data_harmonization():
 
     print(f'\nDATA HARMONIZATION EXECUTED SUCCESSFULLY <3')
 
+def run_harmonization_prep():
+
+    print(f'PREPAREMENT STEPS FOR THE DATA HARMONIZATION')
+
+    # TRANSLATE RULES FROM EXCEL TO JSON
+    if p.PREP_STEP_1:
+        print(f'\nSTEP 1: Translating rules from excel to json')
+        _prep_rules_json()
+    else:
+        print(f'\nSTEP 1 (Translating rules from excel to json) skipped.')
+
+    # LABELING AND GUESSING LABELS
+    if p.PREP_STEP_2:
+        print(f'\nSTEP 2: Labeliing the taxa')
+        _label_taxa()
+    else:
+        f'\nSTEP 2 (Labeliing the taxa) skipped.'
+
+    # DEXCEL WRITING
+    if p.PREP_STEP_3:
+        print(f'\nSTEP 3: Writing the taxa with labels into excel')
+        #f.taxon_label_excel_outuput()
+    else:
+        f'\nSTEP 3 (Writing the taxa with labels into excel) skipped.'
+
+    print(f'\nHARMONIZATION PREP EXECUTED SUCCESSFULLY <3')
 
 
 ## INTERNAL HELP FUNCTIONS
@@ -140,3 +167,23 @@ def _normalize():
     harm.normalize(c.HARMONIZED_LABELS, c.HARMONIZED_DATA_FILE_PATH, c.NORMALIZED_JSON_FILE_PATH)
 
     print(f'Normalized data written in {c.HARMONIZED_DATA_FILE_PATH}.')
+
+
+# PREP 1
+def _prep_rules_json():
+    
+    print(f'Reading harmonization rules from {c.EXCEL_HARMONIZATION_RULES_FILE_PATH}.')
+
+    prep.prep_rules_json(c.EXCEL_HARMONIZATION_RULES_FILE_PATH, c.JSON_HARMONIZATION_RULES_FILE_PATH, p.RULES_KEY_INDEX, p.RULES_VALUE_INDEX)
+
+    print(f'Rules written in {c.JSON_HARMONIZATION_RULES_FILE_PATH}.')
+
+
+# PREP 2
+def _label_taxa():
+    
+    print(f'Listing taxon names from data in {c.DATA_TO_BE_HARMONIZED_FILE_PATH} and labeling them.')
+
+    prep.list_taxonnames(c.DATA_TO_BE_HARMONIZED_FILE_PATH, c.JSON_HARMONIZATION_RULES_FILE_PATH, c.TAXON_LIST_FILE_PATH)
+
+    print(f'Taxon names and given labels listed in {c.TAXON_LIST_FILE_PATH}.')

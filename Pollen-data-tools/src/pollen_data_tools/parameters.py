@@ -16,16 +16,21 @@ MAX_YOUNGEST = 2000                 # Max youngest aging of accepted site
 # pollen data
 POLLEN_MIN_SAMPLES = 30             # Min number of polen samples in acceptable site
 
+## EXCEL INDICES
+# column indices in harmonization rules excel (starts from zero)
+RULES_KEY_INDEX = 0     # column number of the original name
+RULES_VALUE_INDEX = 4   # column number of the label
+
 ## RUN DATASET FETCH | which steps to run
 FETCH_STEP_1 = True # Fetch sites within COORDINATES from Neotoma and save to SITES_FILE_PATH
 FETCH_STEP_2 = True # Fetch data of site in SITES_FILE_PATH and save to DATASETS_FILE_PATH
 FETCH_STEP_3 = True # Filter data in DATASETS_FILE_PATH based on filters above and save into FILTERED_FILE_PATH and SUMMARY_FILE_PATH
 FETCH_STEP_4 = False # Write the list of sites from FILTERED_FILE_PATH into excel in OUTPUT_EXCEL_FILE_PATH
 
-# ## RUN HARMONIZATION PREP
-# PREP_STEP_1 = True  # Read harmonization rules from EXCEL_HARMONIZATION_RULES_FILE_PATH and save to JSON_HARMONIZATION_RULES_FILE_PATH
-# PREP_STEP_2 = True  # List taxa from DATA_TO_BE_HARMONIZED_FILE_PATH and determine/guess labels based on JSON_HARMONIZATION_RULES_FILE_PATH and write decisions to TAXON_LIST_FILE_PATH
-# PREP_STEP_3 = True  # Write harmonization labes from TAXON_LIST_FILE_PATH to EXCEL_HARMONIZATOIN_LABELS_FILE_PATH
+## RUN HARMONIZATION PREP
+PREP_STEP_1 = True  # Read harmonization rules from EXCEL_HARMONIZATION_RULES_FILE_PATH and save to JSON_HARMONIZATION_RULES_FILE_PATH
+PREP_STEP_2 = True  # List taxa from DATA_TO_BE_HARMONIZED_FILE_PATH and determine/guess labels based on JSON_HARMONIZATION_RULES_FILE_PATH and write decisions to TAXON_LIST_FILE_PATH
+PREP_STEP_3 = False  # Write harmonization labes from TAXON_LIST_FILE_PATH to EXCEL_HARMONIZATOIN_LABELS_FILE_PATH
 
 ## RUN DATA HARMONIZATION
 HARM_STEP_1 = True  # Replace the taxon names in DATA_TO_BE_HARMONIZED_FILE_PATH with labels in JSON_HARMONIZATION_RULES_UPDATED_FILE_PATH
