@@ -41,9 +41,9 @@ OUTPUT_EXCEL_FILE_PATH = 'output/excel/SITES.xlsx'
 
 ## HARMONIZATION PREP FILE PATHS
 # json files
-JSON_HARMONIZATION_RULES_FILE_PATH = 'output/json/rules-final.json'
-DATA_TO_BE_HARMONIZED_FILE_PATH = 'input/picked_datasets.json'
-TAXON_LIST_FILE_PATH = 'output/json/taxonnames.json'
+JSON_HARMONIZATION_RULES_FILE_PATH = os.path.join(DATA_DIR, "rules.json")
+DATA_TO_BE_HARMONIZED_FILE_PATH = FILTERED_FILE_PATH
+TAXON_LIST_FILE_PATH = os.path.join(DATA_DIR, "taxon_names.json")
 # excel files
 EXCEL_HARMONIZATION_RULES_FILE_PATH = 'input/Harmonization_rules_final.xlsx'
 EXCEL_HARMONIZATOIN_LABELS_FILE_PATH = 'output/excel/Harmonization_labels.xlsx'
@@ -54,8 +54,8 @@ RULES_VALUE_INDEX = 3   # column number of the label
 ## DATA HARMONIZATION FILE PATHS
 # json files
 HARMONIZATION_RULES_UPDATED_FILE_PATH = JSON_HARMONIZATION_RULES_FILE_PATH
-HARMONIZED_DATA_FILE_PATH = 'output/json/harmonized.json'
-MISSING_LABELS_FILE_PATH = 'output/json/missing.json'
-NORMALIZED_JSON_FILE_PATH = 'output/json/normalized.json'
+HARMONIZED_DATA_FILE_PATH = os.path.join(DATA_DIR, "harmonized.json")
+MISSING_LABELS_FILE_PATH = os.path.join(DATA_DIR, "missing.json")
+NORMALIZED_JSON_FILE_PATH = os.path.join(DATA_DIR, "normalized.json")
 # excel files
 HARMONIZED_DATASET_EXCEL_FOLDER = 'output/excel/datasets/'

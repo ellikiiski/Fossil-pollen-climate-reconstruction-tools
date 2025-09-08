@@ -8,6 +8,7 @@ import pollen_data_tools.parameters as p
 import pollen_data_tools.data_fetching.metadata_fetcher as meta
 import pollen_data_tools.data_fetching.data_fetcher as data
 import pollen_data_tools.data_fetching.data_filter as filt
+import pollen_data_tools.data_harmonization.data_harmonizer as harm
 
 
 ## SCRIPT FUNCTIONS
@@ -45,6 +46,35 @@ def run_data_fetch():
         f'\nSTEP 4 (Writing sites into Excel) skipped.'
 
     print(f'\nDATA FETCHED AND SAVED SUCCESFULLY <3\n')
+
+
+def run_data_harmonization():
+
+    print(f'POLLEN DATA HARMONIZATION')
+
+    # HARMONIZE AND REMOVE NONES
+    if p.HARM_STEP_1:
+        print(f'\nSTEP 1: Harmonizing pollen data')
+        _harmonize()
+    else:
+        print(f'\nSTEP 1 (Harmonizing pollen data) skipped.')
+
+    # NORMALIZE
+    if p.HARM_STEP_2:
+        print(f'\nSTEP2: Normalizing the harmonized data')
+        #f.normalizing()
+    else:
+        print(f'STEP 2 (Normalizing the harmonized data) skipped.')
+
+    # WRITE EXCELS
+    if p.HARM_STEP_3:
+        print(f'\nSTEP 3: Creating separate excels for harmonized datasets')
+        #f.dataset_excels_output()
+    else:
+        print(f'\nSTEP 3 (Creating separate excels for harmonized datasets) skipped.')
+
+    print(f'\nDATA HARMONIZATION EXECUTED SUCCESSFULLY <3')
+
 
 
 ## INTERNAL HELP FUNCTIONS
@@ -90,3 +120,13 @@ def _filter_data():
 
     print(f'\nFiltered data written in {c.FILTERED_FILE_PATH}.')
     print(f'Summary of sites written in {c.SUMMARY_FILE_PATH}.')
+
+# HARM 1
+def _harmonize():
+
+    print(f'Replacing taxon names in {c.DATA_TO_BE_HARMONIZED_FILE_PATH} with labes in {c.HARMONIZATION_RULES_UPDATED_FILE_PATH}')
+
+    harm.harmonize(c.DATA_TO_BE_HARMONIZED_FILE_PATH, c.HARMONIZATION_RULES_UPDATED_FILE_PATH, c.HARMONIZED_DATA_FILE_PATH, c.MISSING_LABELS_FILE_PATH)
+
+    print(f'Harmonized data written in {c.HARMONIZED_DATA_FILE_PATH}.')
+    print(f'Missing labels written in {c.MISSING_LABELS_FILE_PATH}.')

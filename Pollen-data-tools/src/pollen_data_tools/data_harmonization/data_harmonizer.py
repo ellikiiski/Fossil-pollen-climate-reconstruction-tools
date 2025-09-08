@@ -1,0 +1,49 @@
+"""
+Harmonize pollen data under specified taxon names.
+"""
+
+from pollen_data_tools.data_harmonization import harmonization_prep as prep
+from ..helpers import json_handler as json
+
+def harmonize(data_json_file_path, rules_file_path, harmonized_json_file_path, missing_json_file_path):
+    """Harmonize the data of json file in data_json_file_path
+    with the rule in rules_file_path (if the file is excel, first create rules json file)
+    and write it into json file in harmonized_json_file_path."""
+
+    rules = json.load_json(rules_file_path)
+    data = json.load_json(data_json_file_path)
+
+    missing = {}
+
+    for site in data:
+
+        datasetid = site['pollen']['datasetid']
+
+        pollendata = site['pollen']['samples']
+        for sample in pollendata:
+
+            sampledata = sample['samples']
+            updated_sampledata = {}
+            for taxon in sampledata.keys():
+
+                og_name = taxon.lower()
+                harmonized_name = rules.get(og_name, og_name)
+                if harmonized_name == og_name:
+                    if og_name not in missing.keys():
+                        missing[og_name] = []
+                    if datasetid not in missing[og_name]:
+                        missing[og_name].append(datasetid)
+
+                if harmonized_name != 'NONE':
+
+                    if harmonized_name not in updated_sampledata.keys():
+                        updated_sampledata[harmonized_name] = 0
+
+                    updated_sampledata[harmonized_name] += sampledata[taxon]
+
+            sample['samples'] = updated_sampledata
+
+    missing = prep.alphapbetize(missing)
+
+    json.write_json(data, harmonized_json_file_path)
+    json.write_json(missing, missing_json_file_path)
