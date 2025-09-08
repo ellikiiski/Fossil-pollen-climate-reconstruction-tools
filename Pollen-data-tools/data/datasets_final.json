@@ -1,0 +1,727 @@
+[
+    {
+        "siteid": 20,
+        "sitename": "Akuvaara",
+        "latitude": 69.12326,
+        "longitude": 27.67406,
+        "ageoldest": 10647,
+        "ageyoungest": 16,
+        "pollen": {
+            "datasetid": 20,
+            "numberofsamples": 34,
+            "samples": [
+                {
+                    "sampledepth": 0,
+                    "radiocarbonage": 0,
+                    "age_calibrated": 16,
+                    "samples": {
+                        "Alnus": 6,
+                        "Amaranthaceae": 1,
+                        "Betula": 268,
+                        "Cyperaceae": 20,
+                        "Dryopteris-type": 3,
+                        "Ericales": 18,
+                        "Lycopodium": 2,
+                        "Picea": 10,
+                        "Pinus": 495,
+                        "Poaceae": 5,
+                        "Rosaceae": 2,
+                        "Rubus chamaemorus": 3,
+                        "Rumex": 1,
+                        "Salix": 1,
+                        "Sphagnum": 31
+                    }
+                },
+                {
+                    "sampledepth": 5,
+                    "radiocarbonage": 349,
+                    "age_calibrated": 373,
+                    "samples": {
+                        "Alnus": 9,
+                        "Artemisia": 3,
+                        "Betula": 268,
+                        "Cyperaceae": 20,
+                        "Dryopteris-type": 1,
+                        "Ericales": 18,
+                        "Lycopodium": 4,
+                        "Picea": 12,
+                        "Pinus": 560,
+                        "Poaceae": 1,
+                        "Quercus": 1,
+                        "Rubus chamaemorus": 5,
+                        "Salix": 1,
+                        "Sphagnum": 23
+                    }
+                },
+                {
+                    "sampledepth": 10,
+                    "radiocarbonage": 699,
+                    "age_calibrated": 729,
+                    "samples": {
+                        "Alnus": 3,
+                        "Asteraceae": 1,
+                        "Betula": 248,
+                        "Cyperaceae": 15,
+                        "Dryopteris-type": 2,
+                        "Ericales": 16,
+                        "Lycopodium": 1,
+                        "Picea": 10,
+                        "Pinus": 453,
+                        "Sphagnum": 22
+                    }
+                },
+                {
+                    "sampledepth": 15,
+                    "radiocarbonage": 1048,
+                    "age_calibrated": 1085,
+                    "samples": {
+                        "Alnus": 5,
+                        "Artemisia": 1,
+                        "Betula": 260,
+                        "Corylus": 1,
+                        "Cyperaceae": 17,
+                        "Dryopteris-type": 1,
+                        "Ericales": 14,
+                        "Lycopodium": 1,
+                        "Picea": 8,
+                        "Pinus": 506,
+                        "Poaceae": 2,
+                        "Rosaceae": 2,
+                        "Rubus chamaemorus": 1,
+                        "Salix": 3,
+                        "Sphagnum": 25,
+                        "Ulmus": 1
+                    }
+                },
+                {
+                    "sampledepth": 20,
+                    "radiocarbonage": 1397,
+                    "age_calibrated": 1440,
+                    "samples": {
+                        "Alnus": 10,
+                        "Betula": 208,
+                        "Cyperaceae": 6,
+                        "Equisetum": 1,
+                        "Ericales": 4,
+                        "Lycopodium": 3,
+                        "Picea": 6,
+                        "Pinus": 500,
+                        "Poaceae": 2,
+                        "Salix": 1,
+                        "Sphagnum": 20
+                    }
+                },
+                {
+                    "sampledepth": 25,
+                    "radiocarbonage": 1747,
+                    "age_calibrated": 1794,
+                    "samples": {
+                        "Alnus": 2,
+                        "Betula": 256,
+                        "Cyperaceae": 12,
+                        "Dryopteris-type": 1,
+                        "Ericales": 13,
+                        "Lycopodium": 2,
+                        "Picea": 10,
+                        "Pinus": 475,
+                        "Poaceae": 5,
+                        "Rosaceae": 1,
+                        "Rubus chamaemorus": 2,
+                        "Sphagnum": 18
+                    }
+                },
+                {
+                    "sampledepth": 30,
+                    "radiocarbonage": 2096,
+                    "age_calibrated": 2147,
+                    "samples": {
+                        "Alnus": 4,
+                        "Artemisia": 2,
+                        "Betula": 258,
+                        "Corylus": 1,
+                        "Cyperaceae": 46,
+                        "Ericales": 9,
+                        "Lycopodium": 5,
+                        "Picea": 5,
+                        "Pinus": 576,
+                        "Poaceae": 4,
+                        "Rosaceae": 2,
+                        "Rumex": 1,
+                        "Sphagnum": 23,
+                        "Tilia": 1
+                    }
+                },
+                {
+                    "sampledepth": 35,
+                    "radiocarbonage": 2445,
+                    "age_calibrated": 2499,
+                    "samples": {
+                        "Alnus": 6,
+                        "Artemisia": 1,
+                        "Betula": 230,
+                        "Cyperaceae": 9,
+                        "Dryopteris-type": 2,
+                        "Ericales": 11,
+                        "Lycopodium": 1,
+                        "Picea": 5,
+                        "Pinus": 472,
+                        "Poaceae": 12,
+                        "Rosaceae": 1,
+                        "Rubus chamaemorus": 3,
+                        "Salix": 2,
+                        "Sphagnum": 16
+                    }
+                },
+                {
+                    "sampledepth": 40,
+                    "radiocarbonage": 2750,
+                    "age_calibrated": 2849,
+                    "samples": {
+                        "Alnus": 3,
+                        "Betula": 247,
+                        "Corylus": 1,
+                        "Cyperaceae": 15,
+                        "Dryopteris-type": 1,
+                        "Ericales": 10,
+                        "Lycopodium": 3,
+                        "Picea": 5,
+                        "Pinus": 467,
+                        "Poaceae": 7,
+                        "Rosaceae": 1,
+                        "Rubus chamaemorus": 2,
+                        "Salix": 2,
+                        "Sphagnum": 10
+                    }
+                },
+                {
+                    "sampledepth": 45,
+                    "radiocarbonage": 3010,
+                    "age_calibrated": 3198,
+                    "samples": {
+                        "Alnus": 11,
+                        "Asteraceae": 1,
+                        "Betula": 242,
+                        "Cyperaceae": 12,
+                        "Dryopteris-type": 2,
+                        "Ericales": 15,
+                        "Lycopodium": 1,
+                        "Picea": 5,
+                        "Pinus": 482,
+                        "Poaceae": 3,
+                        "Rosaceae": 2,
+                        "Salix": 2,
+                        "Sphagnum": 18
+                    }
+                },
+                {
+                    "sampledepth": 50,
+                    "radiocarbonage": 3270,
+                    "age_calibrated": 3547,
+                    "samples": {
+                        "Alnus": 5,
+                        "Betula": 208,
+                        "Corylus": 2,
+                        "Cyperaceae": 12,
+                        "Ericales": 5,
+                        "Picea": 6,
+                        "Pinus": 529,
+                        "Poaceae": 4,
+                        "Ranunculaceae": 1,
+                        "Rubus chamaemorus": 3,
+                        "Selaginella": 1,
+                        "Sphagnum": 11
+                    }
+                },
+                {
+                    "sampledepth": 55,
+                    "radiocarbonage": 3530,
+                    "age_calibrated": 3896,
+                    "samples": {
+                        "Alnus": 9,
+                        "Betula": 290,
+                        "Cyperaceae": 23,
+                        "Dryopteris-type": 2,
+                        "Equisetum": 1,
+                        "Ericales": 14,
+                        "Lycopodium": 3,
+                        "Picea": 5,
+                        "Pinus": 538,
+                        "Poaceae": 7,
+                        "Ranunculaceae": 1,
+                        "Salix": 5,
+                        "Sphagnum": 20,
+                        "Ulmus": 1
+                    }
+                },
+                {
+                    "sampledepth": 60,
+                    "radiocarbonage": 3790,
+                    "age_calibrated": 4247,
+                    "samples": {
+                        "Alnus": 15,
+                        "Amaranthaceae": 2,
+                        "Artemisia": 1,
+                        "Betula": 296,
+                        "Corylus": 3,
+                        "Cyperaceae": 17,
+                        "Dryopteris-type": 3,
+                        "Ericales": 10,
+                        "Pinus": 644,
+                        "Poaceae": 3,
+                        "Quercus": 2,
+                        "Salix": 2,
+                        "Sphagnum": 10
+                    }
+                },
+                {
+                    "sampledepth": 65,
+                    "radiocarbonage": 4050,
+                    "age_calibrated": 4599,
+                    "samples": {
+                        "Alnus": 11,
+                        "Artemisia": 1,
+                        "Betula": 388,
+                        "Corylus": 3,
+                        "Cyperaceae": 19,
+                        "Dryopteris-type": 3,
+                        "Ericales": 9,
+                        "Lycopodium": 3,
+                        "Picea": 1,
+                        "Pinus": 605,
+                        "Poaceae": 7,
+                        "Quercus": 1,
+                        "Rosaceae": 1,
+                        "Sphagnum": 12
+                    }
+                },
+                {
+                    "sampledepth": 70,
+                    "radiocarbonage": 4338,
+                    "age_calibrated": 4955,
+                    "samples": {
+                        "Alnus": 17,
+                        "Amaranthaceae": 1,
+                        "Artemisia": 3,
+                        "Betula": 214,
+                        "Corylus": 1,
+                        "Cyperaceae": 7,
+                        "Dryopteris-type": 4,
+                        "Equisetum": 1,
+                        "Ericales": 3,
+                        "Lycopodium": 1,
+                        "Pinus": 576,
+                        "Poaceae": 3,
+                        "Rosaceae": 1,
+                        "Salix": 3,
+                        "Sphagnum": 6
+                    }
+                },
+                {
+                    "sampledepth": 75,
+                    "radiocarbonage": 4655,
+                    "age_calibrated": 5313,
+                    "samples": {
+                        "Alnus": 20,
+                        "Amaranthaceae": 1,
+                        "Artemisia": 2,
+                        "Betula": 335,
+                        "Cyperaceae": 13,
+                        "Dryopteris-type": 2,
+                        "Ericales": 7,
+                        "Lycopodium": 1,
+                        "Pinus": 492,
+                        "Poaceae": 3,
+                        "Salix": 2,
+                        "Sphagnum": 12
+                    }
+                },
+                {
+                    "sampledepth": 80,
+                    "radiocarbonage": 4972,
+                    "age_calibrated": 5671,
+                    "samples": {
+                        "Alnus": 22,
+                        "Betula": 264,
+                        "Corylus": 3,
+                        "Cyperaceae": 12,
+                        "Equisetum": 1,
+                        "Lycopodium": 1,
+                        "Pinus": 514,
+                        "Poaceae": 2,
+                        "Rosaceae": 3,
+                        "Rubus chamaemorus": 1,
+                        "Selaginella": 1,
+                        "Sphagnum": 8,
+                        "Ulmus": 1
+                    }
+                },
+                {
+                    "sampledepth": 85,
+                    "radiocarbonage": 5288,
+                    "age_calibrated": 6027,
+                    "samples": {
+                        "Alnus": 32,
+                        "Betula": 361,
+                        "Corylus": 1,
+                        "Cyperaceae": 16,
+                        "Dryopteris-type": 5,
+                        "Ericales": 7,
+                        "Lycopodium": 2,
+                        "Pinus": 598,
+                        "Quercus": 1,
+                        "Rosaceae": 1,
+                        "Rubus chamaemorus": 1,
+                        "Salix": 1,
+                        "Sphagnum": 12,
+                        "Ulmus": 2
+                    }
+                },
+                {
+                    "sampledepth": 90,
+                    "radiocarbonage": 5605,
+                    "age_calibrated": 6379,
+                    "samples": {
+                        "Alnus": 20,
+                        "Betula": 332,
+                        "Caryophyllaceae": 1,
+                        "Corylus": 1,
+                        "Cyperaceae": 13,
+                        "Dryopteris-type": 5,
+                        "Equisetum": 1,
+                        "Ericales": 2,
+                        "Lycopodium": 3,
+                        "Pinus": 534,
+                        "Poaceae": 1,
+                        "Rosaceae": 2,
+                        "Salix": 3,
+                        "Sphagnum": 4,
+                        "Tilia": 1,
+                        "Ulmus": 2
+                    }
+                },
+                {
+                    "sampledepth": 95,
+                    "radiocarbonage": 5922,
+                    "age_calibrated": 6725,
+                    "samples": {
+                        "Alnus": 22,
+                        "Artemisia": 2,
+                        "Betula": 312,
+                        "Corylus": 1,
+                        "Cyperaceae": 17,
+                        "Dryopteris-type": 2,
+                        "Equisetum": 2,
+                        "Ericales": 3,
+                        "Lycopodium": 4,
+                        "Menyanthes trifoliata": 1,
+                        "Myriophyllum": 1,
+                        "Pinus": 547,
+                        "Poaceae": 3,
+                        "Rosaceae": 3,
+                        "Rubus chamaemorus": 1,
+                        "Salix": 1,
+                        "Sphagnum": 8,
+                        "Ulmus": 2
+                    }
+                },
+                {
+                    "sampledepth": 100,
+                    "radiocarbonage": 6234,
+                    "age_calibrated": 7062,
+                    "samples": {
+                        "Alnus": 20,
+                        "Amaranthaceae": 1,
+                        "Betula": 269,
+                        "Cyperaceae": 13,
+                        "Dryopteris-type": 4,
+                        "Ericales": 1,
+                        "Lycopodium": 1,
+                        "Pinus": 530,
+                        "Poaceae": 2,
+                        "Rosaceae": 1,
+                        "Salix": 2,
+                        "Sphagnum": 6
+                    }
+                },
+                {
+                    "sampledepth": 105,
+                    "radiocarbonage": 6541,
+                    "age_calibrated": 7391,
+                    "samples": {
+                        "Alnus": 25,
+                        "Apiaceae": 1,
+                        "Betula": 336,
+                        "Corylus": 1,
+                        "Cyperaceae": 18,
+                        "Dryopteris-type": 11,
+                        "Ericales": 3,
+                        "Lycopodium": 8,
+                        "Myriophyllum": 1,
+                        "Pinus": 627,
+                        "Poaceae": 4,
+                        "Sphagnum": 7,
+                        "Tilia": 1
+                    }
+                },
+                {
+                    "sampledepth": 110,
+                    "radiocarbonage": 6848,
+                    "age_calibrated": 7711,
+                    "samples": {
+                        "Alnus": 13,
+                        "Apiaceae": 1,
+                        "Artemisia": 2,
+                        "Asteraceae": 1,
+                        "Betula": 400,
+                        "Corylus": 2,
+                        "Cyperaceae": 8,
+                        "Dryopteris-type": 11,
+                        "Ericales": 4,
+                        "Lycopodium": 11,
+                        "Pinus": 567,
+                        "Poaceae": 5,
+                        "Rosaceae": 2,
+                        "Rumex": 1,
+                        "Sphagnum": 7
+                    }
+                },
+                {
+                    "sampledepth": 115,
+                    "radiocarbonage": 7155,
+                    "age_calibrated": 8024,
+                    "samples": {
+                        "Alnus": 5,
+                        "Artemisia": 1,
+                        "Betula": 268,
+                        "Caryophyllaceae": 1,
+                        "Cyperaceae": 7,
+                        "Dryopteris-type": 5,
+                        "Ericales": 3,
+                        "Lycopodium": 7,
+                        "Picea": 2,
+                        "Pinus": 385,
+                        "Poaceae": 6,
+                        "Rosaceae": 5,
+                        "Salix": 1,
+                        "Sphagnum": 8,
+                        "Ulmus": 1
+                    }
+                },
+                {
+                    "sampledepth": 120,
+                    "radiocarbonage": 7463,
+                    "age_calibrated": 8330,
+                    "samples": {
+                        "Alnus": 10,
+                        "Artemisia": 1,
+                        "Betula": 396,
+                        "Cyperaceae": 12,
+                        "Dryopteris-type": 11,
+                        "Ericales": 4,
+                        "Lycopodium": 15,
+                        "Pinus": 431,
+                        "Poaceae": 10,
+                        "Rosaceae": 2,
+                        "Salix": 1,
+                        "Sphagnum": 4,
+                        "Ulmus": 2
+                    }
+                },
+                {
+                    "sampledepth": 125,
+                    "radiocarbonage": 7770,
+                    "age_calibrated": 8630,
+                    "samples": {
+                        "Alnus": 10,
+                        "Betula": 495,
+                        "Cyperaceae": 8,
+                        "Dryopteris-type": 15,
+                        "Ericales": 2,
+                        "Lycopodium": 11,
+                        "Pinus": 262,
+                        "Poaceae": 6,
+                        "Rosaceae": 1,
+                        "Salix": 4,
+                        "Sphagnum": 4,
+                        "Ulmus": 2
+                    }
+                },
+                {
+                    "sampledepth": 130,
+                    "radiocarbonage": 8008,
+                    "age_calibrated": 8925,
+                    "samples": {
+                        "Alnus": 8,
+                        "Artemisia": 2,
+                        "Betula": 874,
+                        "Cyperaceae": 22,
+                        "Dryopteris-type": 28,
+                        "Equisetum": 1,
+                        "Ericales": 4,
+                        "Lycopodium": 22,
+                        "Pinus": 95,
+                        "Poaceae": 25,
+                        "Rosaceae": 7,
+                        "Salix": 4,
+                        "Sphagnum": 1
+                    }
+                },
+                {
+                    "sampledepth": 135,
+                    "radiocarbonage": 8246,
+                    "age_calibrated": 9216,
+                    "samples": {
+                        "Alnus": 4,
+                        "Betula": 525,
+                        "Cyperaceae": 17,
+                        "Dryopteris-type": 40,
+                        "Equisetum": 2,
+                        "Ericales": 1,
+                        "Lycopodium": 36,
+                        "Pinus": 36,
+                        "Poaceae": 14,
+                        "Rosaceae": 4,
+                        "Salix": 7,
+                        "Sphagnum": 6,
+                        "Ulmus": 1
+                    }
+                },
+                {
+                    "sampledepth": 140,
+                    "radiocarbonage": 8483,
+                    "age_calibrated": 9504,
+                    "samples": {
+                        "Alnus": 1,
+                        "Artemisia": 2,
+                        "Betula": 616,
+                        "Cyperaceae": 20,
+                        "Dryopteris-type": 31,
+                        "Equisetum": 1,
+                        "Ericales": 2,
+                        "Lycopodium": 44,
+                        "Pinus": 21,
+                        "Poaceae": 8,
+                        "Rosaceae": 4,
+                        "Salix": 6,
+                        "Sphagnum": 3,
+                        "Thalictrum": 1
+                    }
+                },
+                {
+                    "sampledepth": 145,
+                    "radiocarbonage": 8721,
+                    "age_calibrated": 9790,
+                    "samples": {
+                        "Betula": 450,
+                        "Cyperaceae": 19,
+                        "Dryopteris-type": 17,
+                        "Equisetum": 3,
+                        "Ericales": 3,
+                        "Lycopodium": 72,
+                        "Pinus": 14,
+                        "Poaceae": 3,
+                        "Ranunculaceae": 1,
+                        "Rosaceae": 1,
+                        "Rumex": 2,
+                        "Salix": 4,
+                        "Sparganium": 1
+                    }
+                },
+                {
+                    "sampledepth": 150,
+                    "radiocarbonage": 8959,
+                    "age_calibrated": 10075,
+                    "samples": {
+                        "Artemisia": 2,
+                        "Betula": 379,
+                        "Cyperaceae": 22,
+                        "Dryopteris-type": 3,
+                        "Equisetum": 2,
+                        "Ericales": 1,
+                        "Lycopodium": 46,
+                        "Pinus": 4,
+                        "Poaceae": 10,
+                        "Rosaceae": 4,
+                        "Salix": 5,
+                        "Sparganium": 2
+                    }
+                },
+                {
+                    "sampledepth": 152.5,
+                    "radiocarbonage": 9078,
+                    "age_calibrated": 10218,
+                    "samples": {
+                        "Alnus": 1,
+                        "Artemisia": 1,
+                        "Betula": 282,
+                        "Cyperaceae": 29,
+                        "Dryopteris-type": 1,
+                        "Equisetum": 1,
+                        "Ericales": 9,
+                        "Lycopodium": 24,
+                        "Pinus": 4,
+                        "Poaceae": 12,
+                        "Rosaceae": 3,
+                        "Rumex": 5,
+                        "Salix": 7,
+                        "Sphagnum": 2,
+                        "Thalictrum": 1
+                    }
+                },
+                {
+                    "sampledepth": 155,
+                    "radiocarbonage": 9197,
+                    "age_calibrated": 10361,
+                    "samples": {
+                        "Artemisia": 4,
+                        "Asteraceae": 1,
+                        "Betula": 239,
+                        "Corylus": 1,
+                        "Cyperaceae": 30,
+                        "Dryopteris-type": 1,
+                        "Equisetum": 4,
+                        "Ericales": 33,
+                        "Lycopodium": 36,
+                        "Pinus": 8,
+                        "Poaceae": 24,
+                        "Potamogeton": 2,
+                        "Rosaceae": 11,
+                        "Rumex": 5,
+                        "Salix": 9,
+                        "Saxifraga": 4
+                    }
+                },
+                {
+                    "sampledepth": 160,
+                    "radiocarbonage": 9434,
+                    "age_calibrated": 10647,
+                    "samples": {
+                        "Artemisia": 3,
+                        "Betula": 180,
+                        "Cyperaceae": 17,
+                        "Equisetum": 1,
+                        "Ericales": 45,
+                        "Lycopodium": 8,
+                        "Pinus": 2,
+                        "Poaceae": 13,
+                        "Rosaceae": 4,
+                        "Rumex": 7,
+                        "Salix": 9,
+                        "Saxifraga": 4
+                    }
+                }
+            ]
+        },
+        "chronologies": {
+            "datasetid": 7867,
+            "numberofsamples": 5,
+            "samples": [
+                37.5,
+                67.5,
+                97.5,
+                125,
+                147.5
+            ]
+        }
+    }
+]

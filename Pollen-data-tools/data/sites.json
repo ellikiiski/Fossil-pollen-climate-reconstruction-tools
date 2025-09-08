@@ -1,1 +1,58 @@
-[]
+[
+    {
+        "siteid": 12,
+        "sitename": "Ageröds Mosse",
+        "latitude": 55.92856,
+        "longitude": 13.43847,
+        "ageoldest": null,
+        "ageyoungest": null,
+        "pollen": {
+            "datasetid": 12
+        },
+        "chronologies": {
+            "datasetid": 7861
+        }
+    },
+    {
+        "siteid": 16,
+        "sitename": "Ahlenmoor",
+        "latitude": 53.68449,
+        "longitude": 8.79869,
+        "ageoldest": null,
+        "ageyoungest": null,
+        "pollen": {
+            "datasetid": 16
+        },
+        "chronologies": {
+            "datasetid": 7864
+        }
+    },
+    {
+        "siteid": 20,
+        "sitename": "Akuvaara",
+        "latitude": 69.12326,
+        "longitude": 27.67406,
+        "ageoldest": null,
+        "ageyoungest": null,
+        "pollen": {
+            "datasetid": 20
+        },
+        "chronologies": {
+            "datasetid": 7867
+        }
+    },
+    {
+        "siteid": 226,
+        "sitename": "Ballybetagh",
+        "latitude": 53.166667,
+        "longitude": -6.25,
+        "ageoldest": null,
+        "ageyoungest": null,
+        "pollen": {
+            "datasetid": 228
+        },
+        "chronologies": {
+            "datasetid": 7900
+        }
+    }
+]

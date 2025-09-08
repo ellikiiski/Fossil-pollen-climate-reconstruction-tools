@@ -1,0 +1,18 @@
+[
+    {
+        "siteid": 20,
+        "sitename": "Akuvaara",
+        "latitude": 69.12326,
+        "longitude": 27.67406,
+        "ageoldest": 10647,
+        "ageyoungest": 16,
+        "pollen": {
+            "datasetid": 20,
+            "numberofsamples": 34
+        },
+        "chronologies": {
+            "datasetid": 7867,
+            "numberofsamples": 5
+        }
+    }
+]
