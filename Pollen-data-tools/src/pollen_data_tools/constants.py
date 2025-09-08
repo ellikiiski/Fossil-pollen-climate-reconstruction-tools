@@ -34,8 +34,8 @@ DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
 # json files
 SITES_FILE_PATH = os.path.join(DATA_DIR, "sites.json")
 DATASETS_FILE_PATH = os.path.join(DATA_DIR, "datasets.json")
-FILTERED_FILE_PATH = 'output/json/FILTERED.json'
-SUMMARY_FILE_PATH = 'output/json/summary.json'
+FILTERED_FILE_PATH = os.path.join(DATA_DIR, "datasets_final.json")
+SUMMARY_FILE_PATH = os.path.join(DATA_DIR, "data_summary.json")
 # excel files
 OUTPUT_EXCEL_FILE_PATH = 'output/excel/SITES.xlsx'
 

@@ -19,7 +19,7 @@ POLLEN_MIN_SAMPLES = 30             # Min number of polen samples in acceptable 
 ## RUN DATASET FETCH | which steps to run
 FETCH_STEP_1 = True # Fetch sites within COORDINATES from Neotoma and save to SITES_FILE_PATH
 FETCH_STEP_2 = True # Fetch data of site in SITES_FILE_PATH and save to DATASETS_FILE_PATH
-FETCH_STEP_3 = False # Filter data in DATASETS_FILE_PATH based on filters above and save into FILTERED_FILE_PATH and SUMMARY_FILE_PATH
+FETCH_STEP_3 = True # Filter data in DATASETS_FILE_PATH based on filters above and save into FILTERED_FILE_PATH and SUMMARY_FILE_PATH
 FETCH_STEP_4 = False # Write the list of sites from FILTERED_FILE_PATH into excel in OUTPUT_EXCEL_FILE_PATH
 
 # ## RUN HARMONIZATION PREP

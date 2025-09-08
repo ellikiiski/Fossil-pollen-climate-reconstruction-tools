@@ -1,0 +1,18 @@
+[
+    {
+        "siteid": 12,
+        "sitename": "Ageröds Mosse",
+        "latitude": 55.92856,
+        "longitude": 13.43847,
+        "ageoldest": 9099,
+        "ageyoungest": 19,
+        "pollen": {
+            "datasetid": 12,
+            "numberofsamples": 135
+        },
+        "chronologies": {
+            "datasetid": 7861,
+            "numberofsamples": 21
+        }
+    }
+]
