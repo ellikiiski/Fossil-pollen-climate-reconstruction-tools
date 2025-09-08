@@ -2,6 +2,7 @@
     {
         "siteid": 12,
         "sitename": "Ageröds Mosse",
+        "filename": "AgerodsMosse_12",
         "latitude": 55.92856,
         "longitude": 13.43847,
         "ageoldest": null,
@@ -16,6 +17,7 @@
     {
         "siteid": 16,
         "sitename": "Ahlenmoor",
+        "filename": "Ahlenmoor_16",
         "latitude": 53.68449,
         "longitude": 8.79869,
         "ageoldest": null,
@@ -30,6 +32,7 @@
     {
         "siteid": 20,
         "sitename": "Akuvaara",
+        "filename": "Akuvaara_20",
         "latitude": 69.12326,
         "longitude": 27.67406,
         "ageoldest": null,
@@ -44,6 +47,7 @@
     {
         "siteid": 226,
         "sitename": "Ballybetagh",
+        "filename": "Ballybetagh_226",
         "latitude": 53.166667,
         "longitude": -6.25,
         "ageoldest": null,

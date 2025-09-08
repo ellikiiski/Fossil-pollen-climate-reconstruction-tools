@@ -4,6 +4,8 @@ Filter by location or limit the number of searches if desired.
 Function fetch_sites returns a json file containing the info of the datasets.
 """
 
+import re
+from unidecode import unidecode
 from ..helpers import json_handler as json
 from ..helpers import api_requests as req
 
@@ -117,6 +119,7 @@ def _get_site_infos(sites, base_url, loc_limits=None):
             # gather info
             site =  data['data'][0]['site']
             sitename = site['sitename']
+            filename = f'{_clean_sitename(sitename)}_{siteid}'
             latitude = site['latitudesouth']
             longitude = site['longitudeeast']
 
@@ -124,6 +127,7 @@ def _get_site_infos(sites, base_url, loc_limits=None):
             siteinfo = {
                 'siteid' : siteid,
                 'sitename' : sitename,
+                'filename' : filename,
                 'latitude' : latitude,
                 'longitude' : longitude,
                 'ageoldest' : None,
@@ -145,3 +149,8 @@ def _get_site_infos(sites, base_url, loc_limits=None):
             print(f'  {progress}/{total} checked, {len(siteinfos)} accepted...')
 
     return siteinfos
+
+def _clean_sitename(sitename):
+    sitename_clean1 = unidecode(sitename)
+    sitename_clean2 = re.sub(r'[^A-Za-z]', '', sitename_clean1)
+    return sitename_clean2

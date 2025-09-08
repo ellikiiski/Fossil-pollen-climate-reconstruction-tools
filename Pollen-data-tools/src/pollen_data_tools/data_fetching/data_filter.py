@@ -94,9 +94,11 @@ def _chronology_filter(data, min_number=None, min_oldest=None, max_youngest=None
 
 
 def _strip_of_samples(data):
-    """Removes the sample data (both pollen and chronological) of the given data."""
+    """Removes the sample data (both pollen and chronological) of the given data.
+    Removes also the filename row."""
 
     for site in data:
+        del site['filename']
         del site['pollen']['samples']
         del site['chronologies']['samples']
 
