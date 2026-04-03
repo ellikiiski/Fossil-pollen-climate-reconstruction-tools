@@ -94,7 +94,7 @@ def run_harmonization_prep():
     else:
         f'\nSTEP 2 (Labeliing the taxa) skipped.'
 
-    # DEXCEL WRITING
+    # EXCEL WRITING
     if p.PREP_STEP_3:
         print(f'\nSTEP 3: Writing the taxa with labels into excel')
         #f.taxon_label_excel_outuput()

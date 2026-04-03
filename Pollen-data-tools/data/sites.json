@@ -18,8 +18,8 @@
         "siteid": 16,
         "sitename": "Ahlenmoor",
         "filename": "Ahlenmoor_16",
-        "latitude": 53.68449,
-        "longitude": 8.79869,
+        "latitude": 53.66,
+        "longitude": 8.82,
         "ageoldest": null,
         "ageyoungest": null,
         "pollen": {
@@ -27,36 +27,6 @@
         },
         "chronologies": {
             "datasetid": 7864
-        }
-    },
-    {
-        "siteid": 20,
-        "sitename": "Akuvaara",
-        "filename": "Akuvaara_20",
-        "latitude": 69.12326,
-        "longitude": 27.67406,
-        "ageoldest": null,
-        "ageyoungest": null,
-        "pollen": {
-            "datasetid": 20
-        },
-        "chronologies": {
-            "datasetid": 7867
-        }
-    },
-    {
-        "siteid": 226,
-        "sitename": "Ballybetagh",
-        "filename": "Ballybetagh_226",
-        "latitude": 53.166667,
-        "longitude": -6.25,
-        "ageoldest": null,
-        "ageyoungest": null,
-        "pollen": {
-            "datasetid": 228
-        },
-        "chronologies": {
-            "datasetid": 7900
         }
     }
 ]

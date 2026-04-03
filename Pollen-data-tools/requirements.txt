@@ -1,5 +1,8 @@
 # imports
 requests==2.31.0
+unidecode==1.2.0
+pandas==2.2.2
 
 # testing
 pytest==7.4.0
+
