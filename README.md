@@ -2,15 +2,20 @@
 
 In this repository, you find the data and scripts used in my Master's thesis \[insert name here\] (2026) from the University of Helsinki. The thesis itself is available \[insert link info here\]. In the study we reconstructed the Holocene climate in northern Europe using fossil pollen data as a proxy.
 
-### Data
+### Data and output
+
+The fossil pollen data gathered from 211 sites in northern Europe and the reconstructed temperature predictions for those sites can be found in the folder Data and output.
 
 #### Harmonized fossil pollen data
 
-One big data csv coming here
+The pollen data and the metadata of the sites:
+- Harmonized fossil pollen data (csv file)
+- Metadata of the fossil pollen sites (csv file)
 
 #### Reconstructed temperature values
 
-One big data csv coming here
+The output of the climate reconstruciton models:
+- Reconstructed temperature predictions per model (csv file)
 
 ### Code
 
