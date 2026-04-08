@@ -9,13 +9,13 @@ The fossil pollen data gathered from 211 sites in northern Europe and the recons
 #### Harmonized fossil pollen data
 
 The pollen data and the metadata of the sites:
-- Harmonized fossil pollen data (csv file)
-- Metadata of the fossil pollen sites (csv file)
+- Harmonized fossil pollen data ([csv file](https://github.com/ellikiiski/Fossil-pollen-climate-reconstruction-tools/blob/main/Data-and-output/fossil_pollen_data_211_sites_europe.csv))
+- Metadata of the fossil pollen sites ([csv file](https://github.com/ellikiiski/Fossil-pollen-climate-reconstruction-tools/blob/main/Data-and-output/metadata_211_sites_europe.csv))
 
 #### Reconstructed temperature values
 
 The output of the climate reconstruciton models:
-- Reconstructed temperature predictions per model (csv file)
+- Reconstructed temperature predictions per model ([csv file](https://github.com/ellikiiski/Fossil-pollen-climate-reconstruction-tools/blob/main/Data-and-output/reconstructed_temperatures_211_sites_europe.csv))
 
 ### Code
 
