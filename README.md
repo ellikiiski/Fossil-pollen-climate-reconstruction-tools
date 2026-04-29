@@ -19,7 +19,7 @@ The output of the climate reconstruciton models:
 
 ### Code
 
-*DISCLAIMER*: The code here was written during summer 2024 is not kept up to date. Also, the level of documentation and clarity of the code varies.
+*DISCLAIMER*: The code here was written during summer 2024 and is not kept up to date. Also, the level of documentation and clarity of the code varies.
 
 #### Pollen data tools (pollen data processing)
 
