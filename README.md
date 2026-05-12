@@ -1,6 +1,6 @@
 ## Tools for fossil pollen based climate reconstructions
 
-In this repository, you find the data and scripts used in my Master's thesis \[insert name here\] (2026) from the University of Helsinki. The thesis itself is available \[insert link info here\]. In the study we reconstructed the Holocene climate in northern Europe using fossil pollen data as a proxy.
+In this repository, you find the data and scripts used in my Master's thesis *Evaluating methods for predicting climatic conditions from pollen data* (2026) from the University of Helsinki. The thesis itself is available \[insert link info here\]. In the study we reconstructed the Holocene climate in northern Europe using fossil pollen data as a proxy.
 
 ### Data and output
 
